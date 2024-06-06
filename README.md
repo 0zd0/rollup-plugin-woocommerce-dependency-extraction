@@ -1,15 +1,9 @@
 # rollup-plugin-woocommerce-dependency-extraction
 
-To install dependencies:
+## Installation
+
+Install the plugin
 
 ```bash
-bun install
+bun install rollup-plugin-wordpress-dependency-extraction --save-dev
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.

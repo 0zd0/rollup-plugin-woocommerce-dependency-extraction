@@ -1,9 +1,48 @@
 {
   "name": "rollup-plugin-woocommerce-dependency-extraction",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "Rollup plugin to eliminate global Woocommerce dependencies.",
   "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "homepage": "https://github.com/0zd0/rollup-plugin-woocommerce-dependency-extraction#readme",
+  "bugs": {
+    "url": "https://github.com/0zd0/rollup-plugin-woocommerce-dependency-extraction/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0zd0/rollup-plugin-woocommerce-dependency-extraction.git"
+  },
+  "author": "Pavl",
+  "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/bun": "latest",
+    "rollup": "^4.18.0",
+    "tslib": "^2.6.3",
     "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "rollup": "^3.0.0||^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "rollup": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "rollup-plugin",
+    "wordpress",
+    "dependency",
+    "extraction",
+    "rollup"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "bun run build"
   }
 }
