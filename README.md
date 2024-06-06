@@ -5,5 +5,5 @@
 Install the plugin
 
 ```bash
-bun install rollup-plugin-wordpress-dependency-extraction --save-dev
+bun install rollup-plugin-woocommerce-dependency-extraction --save-dev
 ```
