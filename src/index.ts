@@ -62,7 +62,7 @@ export default function wcDependencyExtraction(isDev: boolean): Plugin {
             }
         },
         transform(code: string, id: string) {
-            if (isDev && id.endsWith('.ts') || id.endsWith('.tsx')) {
+            if (isDev && (id.endsWith('.ts') || id.endsWith('.tsx'))) {
                 Object.keys(wcExternal).forEach((key) => {
                     const value = wcExternal[key]
                     const regex = new RegExp(
