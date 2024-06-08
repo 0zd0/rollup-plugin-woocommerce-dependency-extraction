@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-woocommerce-dependency-extraction",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Rollup plugin to eliminate global Woocommerce dependencies.",
   "type": "module",
   "main": "dist/index.js",
